@@ -2,7 +2,7 @@
 - hosts: all 
   become: yes
   tasks: 
-    - names: i want to install apache2 webserver on ubuntu
+    - names: i want to install apache2 webserver on redhat
       apt: 
       name: apache2
       state: present 
