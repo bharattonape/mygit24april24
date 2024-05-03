@@ -3,19 +3,19 @@
   become: yes
   tasks :
     - name: install git 
-      apt: 
+      yum: 
        name: git 
        status: present 
 
   
     - name: install tree 
-      apt: 
+      yum: 
        name: tree 
        status: present 
 
     - name: install wget 
-      apt: 
+      yum: 
        name: wget 
-       status: present
+       status: absent
 
 
