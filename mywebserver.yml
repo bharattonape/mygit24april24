@@ -1,5 +1,5 @@
 ---
-- name: Install Apache HTTP Server on Amazon Linux
+- name: i want to install httpd webserver on RedHat
   hosts: your_amazon_linux_servers
   become: yes
   tasks:
@@ -14,14 +14,14 @@
         state: started
         enabled: yes
 
-    - name: i want to install httpd webserver on Redhat 
+    - name: i want to install httpd webserver on RedHat 
       dnf :
         name: httpd 
         state: present 
-      when: ansible_os_family=="Redhart" 
-       
-    - name: i want to start httpd webserver on Redhat 
+      when: ansible_os_family=="RedHat" 
+
+    - name: i want to start httpd webserver on RedHat 
       service: 
         name: httpd 
         state: started 
-      when: ansible_os_family=="Redhat"     
+      when: ansible_os_family=="RedHat"     
