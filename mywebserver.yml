@@ -5,4 +5,10 @@
     - names: i want to install apache2 webserver on redhat
       yum: 
       name: apache2
-      state: present 
+      state: present
+
+    - name: i want to start apache2 webserver on amazon linux
+      service: 
+         name: apache2
+         state:  started
+         
