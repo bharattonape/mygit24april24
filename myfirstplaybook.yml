@@ -16,6 +16,6 @@
     - name: install wget 
       yum: 
        name: wget 
-       status: absent
+       status: present
 
 
