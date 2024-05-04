@@ -1,4 +1,4 @@
---- 
+---
 - name: Install Apache HTTP Server on Amazon Linux
   hosts: your_amazon_linux_servers
   become: yes
