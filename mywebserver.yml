@@ -1,9 +1,9 @@
 ---
-- name: Install apache server   # name of the playbook
-  hosts: ec2    # target group defined in the inventory file 
+- name: Install apache server   
+  hosts: ec2    
   become: yes
   tasks:
-    - name: install apache server   # name of the play
+    - name: install apache server   
       yum:
         name: httpd
         state: latest
