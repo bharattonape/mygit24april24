@@ -1,21 +1,9 @@
 ---
-- hosts: all
-  become: yes
-  tasks :
-    - name: install git 
-      yum: 
-       name: git 
-       status: present 
-
-  
-    - name: install tree 
-      yum: 
-       name: tree 
-       status: present 
-
-    - name: install wget 
-      yum: 
-       name: wget 
-       status: present
-
-
+- name: Install Git on Amazon Linux
+  hosts: all
+  become: true
+  tasks:
+    - name: Install Git
+      yum:
+        name: git
+        state: present
