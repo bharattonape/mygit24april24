@@ -1,10 +1,7 @@
 ---
-- name: Install apache server   
-  hosts: ec2    
-  become: yes
-  tasks:
-    
-
+- hosts: all 
+  tasks: 
+  
     - name: i want to install httpd webserver on RedHat 
       dnf :
         name: httpd 
