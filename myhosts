@@ -13,10 +13,14 @@
 
 
 [ubuntuservers]
-172.31.9.230
-172.31.10.66 
+172.31.9.230 
 
 
 [redhatservers]
-172.31.9.230
 172.31.10.66 
+
+
+
+[mywebservers:vars]
+var= value
+mywebpackonredhat= httpd 
