@@ -1,6 +1,6 @@
 --- 
 - name: i want to isntall httpd webserver on redHat 
-  hosts: all 
+  hosts: mywebservers
   become: yes
   tasks: 
   
