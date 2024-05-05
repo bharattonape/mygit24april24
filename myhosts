@@ -23,6 +23,3 @@
 
 
 
-[mywebservers:vars]
-var= value
-mywebpackonredhat= httpd
